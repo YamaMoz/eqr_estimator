@@ -1,0 +1,61 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Temporary Diversion Channel</h3>
+  </div>
+  <div class="panel-body">
+    <form action="/tempdiv/results" class="form-horizontal">
+
+      <div class="form-group">
+        <label for="chan_length" class="col-sm-4 control-label">Length of Channel</label>
+        <div class="col-sm-8">
+          <input name="chan_length" type="number" step="any" class="form-control" id="chan_length" placeholder="Enter the length of the channel in feet">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="chan_width" class="col-sm-4 control-label">Width of Channel at Bottom</label>
+        <div class="col-sm-8">
+          <input name="chan_width" type="number" min="1" class="form-control" id="chan_width" placeholder="Enter the width of the channel at the bottom in feet">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="incline" class="col-sm-4 control-label">Incline</label>
+        <div class="col-sm-4">
+          <input name="chan_incline_left" type="number" min="1" class="form-control" id="chan_incline_left" placeholder="Left incline in sextants?">
+        </div>
+        <div class="col-sm-4">
+          <input name="chan_incline_right" type="number" min="1" class="form-control" id="chan_incline_right" placeholder="Right incline in sextants?">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="chan_total_width" class="col-sm-4 control-label">Total Channel Width</label>
+        <div class="col-sm-8">
+          <input name="chan_total_width" type="number" min="1" class="form-control" id="chan_total_width" placeholder="Enter the total width of the channel in feet">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="silt_fence_depth" class="col-sm-4 control-label">Silt Fence Depth</label>
+        <div class="col-sm-8">
+          <input name="silt_fence_depth" type="number" min="1" class="form-control" id="silt_fence_depth" placeholder="Enter something in feet">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="length_roll_bedding" class="col-sm-4 control-label">Length/Roll Bedding</label>
+        <div class="col-sm-8">
+          <input name="length_roll_bedding" type="number" min="1" class="form-control" id="length_roll_bedding" placeholder="Enter some number">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-8">
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
